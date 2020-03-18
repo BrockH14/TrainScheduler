@@ -1,0 +1,10 @@
+.jumbotron{
+    background-color: rgb(0, 165, 151) !important;
+    color: white !important;
+}
+.panel-heading{
+    background-color: teal !important;
+}
+body{
+    background-color: rgb(185, 179, 185);
+}
