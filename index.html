@@ -12,14 +12,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!-- Firebase Reference -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-analytics.js"></script> -->
+
     <!-- Moment.js Reference -->
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
     <!--Css stylesheet-->
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-<!-- Train Time -->
 <div class="container">
     <div class="jumbotron">
       <h1 class="text-center">Where all the train times live!</h1>
@@ -43,12 +45,13 @@
                   <th>Minutes Away</th>
                 </tr>
               </thead>
-              <tbody>
+              <tbody class="table-body">
 
               </tbody>
             </table>
           </div>
         </div>
+
     <div class="panel panel-primary">
         <div class="panel-heading">
           <h2 class="panel-title"><strong>Add Train</strong></h2>
@@ -71,7 +74,7 @@
               <label for="freq-input">Frequency (min)</label>
               <input type="text" class="form-control" id="freq-input">
             </div>
-            <button type="submit" class="btn btn-primary" id="add-train-btn">Submit</button>
+            <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
           </form>
         </div>
       </div>
@@ -79,6 +82,14 @@
   </div>
 </div>
     <!--Javascript-->
+    <script src="assets/javascript/moment.js"></script>
+    <script src="assets/javascript/preciseDif.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+
     <script src="assets/javascript/train.js"></script>
+
+    
 </body>
 </html>
